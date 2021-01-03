@@ -3,10 +3,23 @@
   "version": "1.0.0",
   "description": "Shop Bucket Backend Service",
   "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
   "repository": "https://github.com/saifakib/Shop-bucket-mern-server",
   "author": "Saif Uddin Akib",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.9",
     "readme-md-generator": "^1.0.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.6"
+  },
+  "engines": {
+    "node":"v12.20.0"
   }
 }
