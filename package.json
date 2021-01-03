@@ -1,0 +1,12 @@
+{
+  "name": "Shop_Bucket_Server",
+  "version": "1.0.0",
+  "description": "Shop Bucket Backend Service",
+  "main": "index.js",
+  "repository": "https://github.com/saifakib/Shop-bucket-mern-server",
+  "author": "Saif Uddin Akib",
+  "license": "MIT",
+  "dependencies": {
+    "readme-md-generator": "^1.0.0"
+  }
+}
