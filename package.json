@@ -1,12 +1,36 @@
 {
-  "name": "Shop_Bucket_Server",
+  "name": "shop_bucket_server",
   "version": "1.0.0",
   "description": "Shop Bucket Backend Service",
   "main": "index.js",
-  "repository": "https://github.com/saifakib/Shop-bucket-mern-server",
-  "author": "Saif Uddin Akib",
-  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saifakib/Shop-bucket-mern-server.git"
+  },
+  "keywords": [
+    "ShopBucket"
+  ],
+  "author": "Saif Uddin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saifakib/Shop-bucket-mern-server/issues"
+  },
+  "homepage": "https://github.com/saifakib/Shop-bucket-mern-server#readme",
   "dependencies": {
-    "readme-md-generator": "^1.0.0"
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.9"
+  },
+  "engines": {
+    "node": "v12.20.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.6"
   }
 }
