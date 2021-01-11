@@ -1,18 +1,19 @@
 require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
-const morgan = require('morgan')
 const path = require('path')
 const mongoose = require('mongoose')
+const { useMorgan }  = require('./middleware')
 
 const app = express()
+
+useMorgan(app)
 app.use(cors())
-app.use(morgan('dev'))
 //app.use(urlencoded({ extended: false }))
 app.use(express.static(path.join(__dirname, '../public')))
 app.use(express.json())
 
-const MONGO_URI = 'mongodb://127.0.0.1:27017/shop_bucket_mern'
+const MONGO_URI = process.env.DATABASE
 
 app.get('/', (req, res) => {
     res.status(200).json({
