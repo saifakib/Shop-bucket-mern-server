@@ -4,6 +4,7 @@ const cors = require('cors')
 const path = require('path')
 const mongoose = require('mongoose')
 const { useMorgan }  = require('./middleware')
+const { logger } = require('./utils')
 
 const app = express()
 
@@ -47,10 +48,10 @@ mongoose
     })
     .then(() => {
         app.listen(process.env.PORT, () => {
-            console.log(`Server listening on ${process.env.PORT}`)
+            logger.info(`Server listening on this ${process.env.PORT}`)
         })
     })
     .catch(err => {
-        console.log(err.message)
+        logger.error(err.message)
     })
 
